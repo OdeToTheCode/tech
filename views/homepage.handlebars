@@ -1,0 +1,17 @@
+<div class="home-title">
+    <h1 class="home-h1">Welcome to "Be Tethical"!</h1>
+    <h4 class="home-h4">By Gavin Benson</h4>
+</div>
+
+<div class="individual-post">
+    <div class="post-item">
+    {{#each posts as |post| }}
+        <div class="post-header">
+            <h1><a href="/post/{{id}}">{{post_title}}</a></h1>
+ 
+            <p>{{user.username}} made this post on {{ format_date post_date }} </p>
+        </div>
+    {{/each }}
+    </div>
+
+</div>
